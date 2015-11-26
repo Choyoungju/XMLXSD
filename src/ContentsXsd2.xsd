@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    
+    <xsd:include schemaLocation="ContentsXsd.xsd"></xsd:include>
+ 
+    <!--루트 엘리먼트 선언-->
+    <xsd:element name = "Contents">
+        <xsd:complexType>
+            <xsd:sequence>
+                
+                <!--music 글로벌 엘리먼트를 참조--> 
+                <xsd:element ref ="music" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+                <!--movie 글로벌 엘리먼트를 참조--> 
+                    <xsd:element ref ="movie" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+
+               
+                
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    
+    
+
+    
+</xsd:schema>
